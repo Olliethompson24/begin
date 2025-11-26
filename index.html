@@ -1,1 +1,222 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <title>Your Name – Home</title> <meta name="viewport" content="width=device-width, initial-scale=1" /> <style> body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #222; } header { background: #111827; color: #f9fafb; padding: 2rem 1.5rem; text-align: center; } header h1 { margin: 0 0 0.5rem 0; font-size: 2rem; } header p { margin: 0; opacity: 0.85; } main { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem 3rem; } section { background: #ffffff; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08); } h2 { margin-top: 0; font-size: 1.3rem; } a { color: #2563eb; text-decoration: none; } a:hover { text-decoration: underline; } footer { text-align: center; font-size: 0.85rem; color: #6b7280; padding: 1.5rem; } </style> </head> <body> <header> <h1>Your Name</h1> <p>Short tagline about who you are / what you do.</p> </header> <main> <section> <h2>About Me</h2> <p> Write a short paragraph about yourself here – what you study, what you’re interested in, or what this website is for. </p> </section> <section> <h2>Projects</h2> <ul> <li><strong>Project 1:</strong> Brief description.</li> <li><strong>Project 2:</strong> Brief description.</li> <li><strong>Project 3:</strong> Brief description.</li> </ul> </section> <section> <h2>Contact</h2> <p> You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a> </p> <p> Or find me on <a href="https://www.linkedin.com">LinkedIn</a>. </p> </section> </main> <footer> &copy; <span id="year"></span> Your Name. All rights reserved. </footer> <script> document.getElementById("year").textContent = new Date().getFullYear(); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signalline – Product Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #111827;
+    }
+    header {
+      background: #020617;
+      color: #f9fafb;
+      padding: 2.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.75rem 0;
+      font-size: 2.1rem;
+      letter-spacing: 0.04em;
+    }
+    header p {
+      margin: 0.1rem 0;
+      opacity: 0.9;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      opacity: 0.7;
+    }
+    main {
+      max-width: 760px;
+      margin: -1.5rem auto 3rem;
+      padding: 0 1.5rem 3rem;
+    }
+    section {
+      background: #ffffff;
+      margin-bottom: 1.5rem;
+      padding: 1.7rem 1.6rem 1.6rem;
+      border-radius: 0.9rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 0.98rem;
+      margin: 0 0 0.75rem 0;
+    }
+    ul {
+      padding-left: 1.1rem;
+      margin: 0.25rem 0 0.75rem 0;
+    }
+    li {
+      margin-bottom: 0.35rem;
+      line-height: 1.5;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      background: #e5e7eb;
+      color: #4b5563;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+    .cta-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: #111827;
+      color: #f9fafb;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+    }
+    .cta-button:hover {
+      background: #020617;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="tagline">Product Concept</p>
+    <h1>Signalline</h1>
+    <p>A focused, experimental product for turning scattered information into clearer decisions.</p>
+    <p style="opacity: 0.7;">This is a live prototype site used to explore brand, structure, and product storytelling.</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="pill">
+        <span class="pill-dot"></span>
+        The Problem
+      </div>
+      <h2>Most decisions are made in noise, not clarity.</h2>
+      <p>
+        People have more data than ever, but less time to process it. Research notes live in different tools,
+        screenshots sit in photo galleries, and important links disappear into endless chat threads.
+      </p>
+      <p>
+        The result is familiar: context gets lost, effort is duplicated, and decisions end up being driven by
+        whatever is most recent or loud, not what is most important.
+      </p>
+    </section>
+
+    <section>
+      <div class="pill">
+        <span class="pill-dot"></span>
+        The Product
+      </div>
+      <h2>A single place to organise the signals that matter.</h2>
+      <p>
+        Signalline is a lightweight product concept that treats every input as a potential signal — articles,
+        notes, metrics, conversations — and gives you a simple way to capture, tag, and revisit them when you
+        are actually making a decision.
+      </p>
+      <ul>
+        <li>Capture key information without breaking your workflow.</li>
+        <li>Group signals around a decision, project, or question.</li>
+        <li>Return later to a structured view instead of an empty page.</li>
+      </ul>
+      <p>
+        The goal is not to track everything, but to reduce friction around holding onto what actually matters.
+      </p>
+    </section>
+
+    <section>
+      <div class="pill">
+        <span class="pill-dot"></span>
+        How It Works
+      </div>
+      <h2>Deliberately narrow, so it stays usable.</h2>
+      <p>
+        Rather than acting as another all-in-one workspace, Signalline is designed to sit alongside tools you
+        already use. The concept focuses on three simple flows:
+      </p>
+      <ul>
+        <li><strong>Capture:</strong> Save a small number of high-signal items with a short note.</li>
+        <li><strong>Group:</strong> Attach those items to the decisions or projects they relate to.</li>
+        <li><strong>Return:</strong> When it is time to decide, review the signals in one clear place.</li>
+      </ul>
+      <p>
+        Everything about the product is intentionally constrained so it remains fast to use and easy to ignore
+        when you do not need it.
+      </p>
+    </section>
+
+    <section>
+      <div class="pill">
+        <span class="pill-dot"></span>
+        Status & Contact
+      </div>
+      <h2>This is an experimental brand and product sample.</h2>
+      <div class="cta-box">
+        <p>
+          This site is being used to learn and test how to design, position, and communicate a product brand on
+          the web. Nothing here is for sale, but the structure, copy, and layout will keep evolving over time.
+        </p>
+        <p>
+          If you have thoughts, feedback, or want to share how you approach similar problems, feel free to reach out:
+        </p>
+        <a class="cta-button" href="mailto:hello@exampleproduct.site">Email the project</a>
+        <p style="font-size: 0.85rem; opacity: 0.8;">
+          You can safely replace this email with any address you control, or keep it here as a placeholder while you experiment.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Signalline. Experimental product brand sample.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
